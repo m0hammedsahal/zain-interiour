@@ -335,6 +335,28 @@
         .swiper-button-prev {
             left: -10px;
         }
+
+
+
+    
+
+    swiper-container {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+      height: 300px;
+    }
+
+    swiper-slide img {
+      display: block;
+      width: 100%;
+    }
 </style>
 
 
@@ -342,18 +364,53 @@
         
     </section>
 
+
+    <swiper-container class="mySwiper" pagination="true" effect="coverflow" grab-cursor="true" centered-slides="true"
+    slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0" coverflow-effect-depth="100"
+    coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
+    <swiper-slide class="object-cover">
+      <img src="./images/alumunium-work-1000x1000.png" />
+    </swiper-slide>
+    <swiper-slide class="object-cover">
+      <img src="./images/kitch3.png" />
+    </swiper-slide>
+    <swiper-slide class="object-cover">
+      <img src="./images/25_Small_Powder_Bathroom_Ideas.png" />
+    </swiper-slide>
+    <swiper-slide class="object-cover">
+      <img src="./images/Contemporary Workspace.jpg" />
+    </swiper-slide>
+    <swiper-slide class="object-cover">
+      <img src="./images/Curtain Services.png" />
+    </swiper-slide>
+    <swiper-slide class="object-cover">
+      <img src="./images/Stylish Bathroom.jpg" />
+    </swiper-slide>
+    <swiper-slide class="object-cover">
+      <img src="./images/Cozy Bedroom.jpg" />
+    </swiper-slide>
+    <swiper-slide class="object-cover">
+      <img src="./images/Customized-wardrobe-with-study-unit.jpg" />
+    </swiper-slide>
+    <swiper-slide class="object-cover">
+      <img src="./images/Modern Living Room.jpg" />
+    </swiper-slide>
+  </swiper-container>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
     
 
     <section id="products" class="py-20 px-4 bg-gradient-to-b from-blue-100 via-purple-100 to-pink-100">
         <h2 class="text-4xl font-bold text-center mb-12 text-purple-800">Our Projects</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
-            <a class="block" href="single_product.html">
+            <a class="block" href="productdetail.html">
                 <div class="group relative bg-white rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105 hover:shadow-xl h-full">
                     <div class="relative overflow-hidden h-48">
-                        <img src="./images/Chic Office Space.png" alt="Modern Table Lamp" class="w-full h-full object-cover transition-transform transform group-hover:scale-110">
+                        <img src="./images/Elegant Kitchen.jpg" alt="Modern Table Lamp" class="w-full h-full object-cover transition-transform transform group-hover:scale-110">
                     </div>
                     <div class="p-4 bg-white">
-                        <h3 class="text-lg font-bold text-gray-800 transition-colors group-hover:text-purple-600">Chic Office Space</h3>
+                        <h3 class="text-lg font-bold text-gray-800 transition-colors group-hover:text-purple-600">Elegant Kitchen/h3>
                         <p class="text-sm text-gray-500 mb-4">A sleek and stylish lamp that enhances the ambiance of any room.</p>
                         <div class="flex items-center justify-between">
                             <div class="flex items-center text-yellow-500">
@@ -370,6 +427,7 @@
                     </div>
                 </div>
             </a>
+            
         
             <!-- Product 2 -->
             <a class="block" href="single_product.html">
